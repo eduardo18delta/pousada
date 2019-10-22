@@ -11,4 +11,14 @@ class painelController extends Controller
     {
     	return view('painel.home.index');
     }
+
+    public function chamaPerfil()
+    {
+    	return view('painel.home.perfil');
+    }
+
+    public function chamaSenha()
+    {
+    	return view('painel.home.senha');
+    }
 }
