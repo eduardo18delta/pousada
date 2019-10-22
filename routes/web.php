@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+# Chamando home principal
+Route::get('/', 'HomeController@chamaHome');
