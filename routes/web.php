@@ -11,5 +11,15 @@
 |
 */
 
-# Chamando home principal
-Route::get('/', 'HomeController@chamaHome');
+Route::get('/' , function(){
+	return view ('welcome');
+});
+
+
+
+Auth::routes();
+
+# Rota de vericação de Login
+Route::get('/home', function() {
+    return view('home');
+})->name('home')->middleware('auth');
