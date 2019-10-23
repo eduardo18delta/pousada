@@ -36,9 +36,6 @@ class userController extends Controller
     					->back()
     					->with('error' , 'Falha ao atualizar perfil, senhas não coincidem!'); 
 
-
-
-
     	if ($update){
     		return redirect()
     					->route('painel.senha')
@@ -48,7 +45,6 @@ class userController extends Controller
     					->back()
     					->with('error' , 'Falha ao atualizar perfil!');    	
     	}
-
 
     }
 }
