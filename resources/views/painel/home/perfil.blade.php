@@ -25,7 +25,7 @@
 
     <div class="row">
         <div class="col-md-12">    	
-            <form action="/atualizar-perfil" method="post"> 
+            <form action="/atualizar-perfil" method="post" enctype="multipart/form-data"> 
             {{ csrf_field() }} 
             <div class="form-group">    	
                 <label>Nome:</label>
