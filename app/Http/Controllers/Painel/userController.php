@@ -11,8 +11,30 @@ class userController extends Controller
     public function updatePerfil(Request $request)
     {
     	#dd($request->all());
-    	$data   = $request->all();
-    	$update = auth()->user()->update($data);
+    	$user = auth()->user();
+    	$data = $request->all();;
+
+    	$data['image'] = $user->image;
+    	if ($request->hasFile('image') && $request->file('image')->isValid()){
+    		if ($user->image)
+    			$name = $user->image;
+    		else 
+    			$name = $user->id;	
+
+    		$extencao = $request->image->extension();
+    		$nameFile  = "{$name}.{$extencao}";
+    		$data['image'] = $nameFile;
+
+    		$upload = $request->image->storeAs('users' , $nameFile);
+
+    		if(!$upload)
+    			return redirect()
+    						->back()
+    						->with('error' , 'Falha ao enviar imagem');
+
+    	};
+
+    	$update = $user->update($data);    	
 
     	if ($update)
     		return redirect()
