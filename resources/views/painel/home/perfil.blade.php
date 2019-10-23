@@ -11,7 +11,8 @@
     <div class="row">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Painel</a></li>                
+                <li class="breadcrumb-item"><a href="/painel">Painel</a></li>                
+                <li class="breadcrumb-item active" aria-current="page">Configurações</li>
                 <li class="breadcrumb-item active" aria-current="page">Perfil</li>
             </ol>
         </nav>
