@@ -34,11 +34,11 @@
             {{ csrf_field() }}  				 	    		
     		<div class="form-group">    	
     			<label>Nova Senha:</label>
-    			<input class="form-control" type="text" name="password_1" required="">  	    			
+    			<input class="form-control" type="password" name="password_1" required="">  	    			
     		</div>  	    				    				  	
             <div class="form-group">        
                 <label>Confirmar nova senha:</label>
-                <input class="form-control" type="text" name="password_2" required="">                    
+                <input class="form-control" type="password" name="password_2" required="">                    
             </div>              
             <div class="form-group">                        
                 <input class="btn btn-success btn-block" type="submit" value="Trocar Senha">              
