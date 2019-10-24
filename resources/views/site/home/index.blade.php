@@ -19,7 +19,6 @@
 
 <body>
 
-
 <div class="super_container">
     
     <!-- Header -->  
@@ -449,27 +448,20 @@
                     <div class="col-lg-5">
                         <div class="section_title">
                             <div>Pousada</div>
-                            <h1>Descubra Marimalde</h1>
+                            <h1>{{$texto2->first()->titulo}}</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row discover_row">
                     <div class="col-lg-5">
                         <div class="discover_highlight">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.</p>
+                            <p>{{$texto2->first()->descricao}}</p>
                         </div>
                         <div class="button discover_button"><a href="#">discover</a></div>
                     </div>
                     <div class="col-lg-7">
                         <div class="discover_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>{{$texto3->first()->descricao}}</p>
                         </div>
                     </div>
                 </div>
