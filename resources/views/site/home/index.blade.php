@@ -19,9 +19,10 @@
 
 <body>
 
+
 <div class="super_container">
     
-    <!-- Header -->
+    <!-- Header -->  
 
     <header class="header">
         <div class="header_content d-flex flex-column align-items-center justify-content-lg-end justify-content-center">
@@ -196,19 +197,14 @@
                 <div class="col">
                     <div class="section_title text-center">
                         <div>Bem-vindo</div>
-                        <h1>Incrível pousada</h1>
+                        <h1>{{$texto1->first()->titulo}}</h1>
                     </div>
                 </div>
             </div>
             <div class="row intro_row">
                 <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1">
                     <div class="intro_text text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>{{$texto1->first()->descricao}}</p>
                     </div>
                 </div>
             </div>
