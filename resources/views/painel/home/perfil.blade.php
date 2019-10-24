@@ -37,10 +37,10 @@
                 <input class="form-control" type="email" name="email" value="{{Auth::user()->email}}" disabled="">  	 
                 <small>Mudanças de email só podem ser efetuadas pelo administrador. Entre em contato <a href="#">aqui</a></small>   
             </div>  	            
-            <div class="form-group"> 
+        {{--<div class="form-group"> 
                 <label>Foto de Perfil:</label>                       
                 <input class="form-control" type="file" name="image">       
-            </div>  
+            </div>--}}
             <div class="form-group">                         
                 <input class="btn btn-success btn-block" type="submit" value="Atualizar Perfil">       
             </div>  
