@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Painel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class painelController extends Controller
+class PainelController extends Controller
 {
     public function index()
     {
