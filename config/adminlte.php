@@ -133,9 +133,9 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Cadastrar',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-file',
+            'text'        => 'Textos Home',
+            'url'         => 'painel/textoshome',
+            'icon'        => 'fas fa-font',
             'label'       => 4,
             'label_color' => 'success',
         ],
