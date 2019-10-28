@@ -72,7 +72,28 @@ class TextoshomeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $attributes = [
+          'titulo' => 'Título',
+          'descricao' => 'Descrição',
+        ];
+
+        $this->validate($request, [
+            'titulo' => 'required|min:4|max:64',
+            'descricao' => 'required|min:10',
+        ] , [] , $attributes);
+        
+        $textos = textohome::find($id);
+        $textos->titulo = $request->titulo;
+        $textos->descricao = $request->descricao;
+        $textos->save();
+        if ($textos)
+            return redirect()
+                        ->back()
+                        ->with('success' , 'Sucesso ao atualizar!');  
+            return redirect()
+                        ->back()
+                        ->with('success' , 'Falha ao atualizar perfil!');    
     }
 
     /**
@@ -85,4 +106,11 @@ class TextoshomeController extends Controller
     {
         //
     }
+
+    public function attributes()
+{
+    return [
+        'titulo' => 'email address',
+    ];
+}
 }
