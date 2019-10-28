@@ -17,8 +17,10 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Painel' ] , function(){
 	Route::post('/atualizar-senha'  , 'UserController@updateSenha')->name('senha.update');
 	
 	# Crud dos Textos da Home
-	Route::get('painel/textoshome', 'TextoshomeController@index');
-	Route::get('painel/textoshome/{id}/editar', 'TextoshomeController@edit');
+	Route::get('painel/textoshome', 'TextoshomeController@index'); 
+	Route::get('painel/textoshome/{id}/editar', 'TextoshomeController@edit'); 
+	
+	Route::post('/atualizar-texto/{id}', 'TextoshomeController@update')->name('atualizar.texto'); 
 
 	
 
