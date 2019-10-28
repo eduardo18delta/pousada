@@ -128,16 +128,15 @@ return [
     'menu' => [
         ['header' => 'main_navigation'],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text'        => 'Ver site',
+            'url'         => '/',
+            'icon'        => 'fas fa-home',            
+            'label_color' => 'success',
         ],
         [
             'text'        => 'Textos Home',
             'url'         => 'painel/textoshome',
-            'icon'        => 'fas fa-font',
-            'label'       => 4,
-            'label_color' => 'success',
+            'icon'        => 'fas fa-edit',                        
         ],
         ['header' => 'account_settings'],
         [
