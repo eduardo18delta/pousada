@@ -14,6 +14,14 @@ class UserController extends Controller
     	$user = auth()->user();
     	$data = $request->all();;
 
+        $attributes = [
+          'name' => 'Nome',          
+        ];
+
+        $this->validate($request, [
+            'name' => 'required|min:4|max:64',            
+        ] , [] , $attributes);
+
     	$data['image'] = $user->image;
     	if ($request->hasFile('image') && $request->file('image')->isValid()){
     		if ($user->image)
