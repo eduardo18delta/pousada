@@ -20,6 +20,16 @@
     </div>
 
     <div class="row">
+        @if (session('success'))
+            <div class="alert alert-success">{{ session('success')}}</div>
+        @endif
+
+        @if (session('error'))
+            <div class="alert alert-danger">{{ session('error')}}</div>
+        @endif
+    </div>  
+
+    <div class="row">
     	<table class="table table table-striped table-bordered">
     		<thead>
 	    		<th>Título:</th>
@@ -36,6 +46,10 @@
     			@endforeach
     		</tbody>
     	</table>
+    </div>
+
+    <div class="row">
+        <small>Não é permitido adicionar novos textos, pois o template da home aceita somente três.</small>   
     </div>
 </div>
 
