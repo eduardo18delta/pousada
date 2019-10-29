@@ -37,7 +37,7 @@
                 <input class="form-control" type="text" name="titulo" value="{{$textos->titulo}}">  
             </div>  	    			    
   			<div class="form-group">
-    		<label>Example textarea</label>
+    		<label>Descrição:</label>
     			<textarea class="form-control" rows="5" name="descricao">
     			{{$textos->descricao}}
     			</textarea>
