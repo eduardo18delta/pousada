@@ -132,6 +132,7 @@ return [
             'url'         => '/',
             'icon'        => 'fas fa-home',            
             'label_color' => 'success',
+            'target' => '_blank'
         ],
         [
             'text'        => 'Textos Home',

@@ -5,8 +5,10 @@ Route::get('/' , 'Site\SiteController@chamaHome')->name('home');
 Route::get('/' , 'Site\SiteController@listaTextos');	
 # Nova rota de Logout
 Route::get('/logout', 'LoginController@logout');
-# Rotas Autenticadas
-Auth::routes();
+# Rotas Autenticadas, com /register desabilitado
+Auth::routes(['register' => false]);
+# B
+
 
 # Rotas Administrativas
 Route::group(['middleware' => ['auth'], 'namespace' => 'Painel' ] , function(){
